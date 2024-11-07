@@ -4,17 +4,16 @@
     <!-- Navbar -->
     <header class="bg-white shadow-md py-4 sticky top-0 z-10 animate-fadeIn">
       <nav class="container mx-auto flex justify-between items-center">
-        <div class="w-[10%] md:w-[5%]">
+        <div class="w-[10%] md:w-[5%] ml-10">
           <img src="./assets/rollo.jpg" alt="Imagen de cookies" class="rounded-lg max-h-40 object-cover w-full">
         </div>
-        <div class="space-x-6 hidden md:flex">
+        <div class="space-x-6 hidden md:flex mr-10">
           <a href="#sobre-nosotros" class="menu-button hover:text-[#fe5957]" v-smooth-scroll>Sobre Nosotros</a>
           <a href="#menu" class="menu-button hover:text-[#fe5957]" v-smooth-scroll>Menú</a>
           <a href="#contacto" class="menu-button hover:text-[#fe5957]" v-smooth-scroll>Contacto</a>
         </div>
       </nav>
     </header>
-
 
     <!-- Hero Banner -->
     <section class="banner-4 text-white py-20 text-center relative animate-fadeIn">
@@ -33,7 +32,7 @@
           MISTER ROLLO es una empresa 100% mexicana que enaltece los sabores y gastronomía de nuestro país con el objetivo de ofrecer productos alimenticios con un valor agregado para el consumidor y socio comercial, mediante la innovación en los procesos de suministro, producción y distribución, logrando así un crecimiento a largo plazo con el asociado.
         </p>          
         <!-- "Mira el video" Button -->
-        <button @click="openModal" class="mt-6 px-6 py-2 bg-primary text-white font-semibold rounded-md">
+        <button @click="openModal" class="mt-3 inline-block py-3 px-8 bg-secondary rounded-full text-sm font-semibold text-white hover:bg-primary transition-all">
           Mira el video
         </button>
       </div>
@@ -67,18 +66,18 @@
     <section id="menu" class="bg-secondary text-white py-20 animate-fadeIn">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold">Nuestro Menú</h2>
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10 ml-10">
           <div class="card p-6 text-left bg-white rounded-2xl shadow-md">
             <h3 class="text-2xl font-semibold text-primary mb-4">Roles</h3>
-            <p class="text-darkGray mb-4">Una variedad de sabores y tamaños para todos los gustos.</p>
+            <p class="text-darkGray mb-4">Roles dulces de chocolate y de canela.</p>
             <img src="./assets/roles-removebg-preview (1).png" alt="Imagen de roles dulces" class="rounded-lg max-h-48 object-contain w-full">
           </div>
           <div class="card p-6 text-left bg-white rounded-2xl shadow-md">
             <h3 class="text-2xl font-semibold text-primary mb-4">Rollos de Pizza</h3>
-            <p class="text-darkGray mb-4">Los originales rollos de Pizza de diferentes tamaños y deliciosos sabores.</p>
+            <p class="text-darkGray mb-4">Los originales rollos de Pizza de diferentes tamaños y deliciosos sabores</p>
             <img src="./assets/roles_pizza-removebg-preview (1).png" alt="Imagen de pizza" class="rounded-lg max-h-48 object-contain w-full">
           </div>
-          <div class="card p-6 text-left bg-white rounded-2xl shadow-md">
+          <div class="card p-6 text-left bg-white rounded-2xl shadow-md mr-10">
             <h3 class="text-2xl font-semibold text-primary mb-4">Galletas</h3>
             <p class="text-darkGray mb-4">Deliciosas Galletas de avena y chocolate!</p>
             <img src="./assets/cookies-removebg-preview (1).png" alt="Imagen de cookies" class="rounded-lg max-h-48 object-contain w-full">

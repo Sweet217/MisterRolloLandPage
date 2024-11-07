@@ -66,7 +66,7 @@
     <section id="menu" class="bg-secondary text-white py-20 animate-fadeIn">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold">Nuestro Menú</h2>
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10 ml-10">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10 m-10">
           <div class="card p-6 text-left bg-white rounded-2xl shadow-md">
             <h3 class="text-2xl font-semibold text-primary mb-4">Roles</h3>
             <p class="text-darkGray mb-4">Roles dulces de chocolate y de canela.</p>
@@ -77,7 +77,7 @@
             <p class="text-darkGray mb-4">Los originales rollos de Pizza de diferentes tamaños y deliciosos sabores</p>
             <img src="./assets/roles_pizza-removebg-preview (1).png" alt="Imagen de pizza" class="rounded-lg max-h-48 object-contain w-full">
           </div>
-          <div class="card p-6 text-left bg-white rounded-2xl shadow-md mr-10">
+          <div class="card p-6 text-left bg-white rounded-2xl shadow-md">
             <h3 class="text-2xl font-semibold text-primary mb-4">Galletas</h3>
             <p class="text-darkGray mb-4">Deliciosas Galletas de avena y chocolate!</p>
             <img src="./assets/cookies-removebg-preview (1).png" alt="Imagen de cookies" class="rounded-lg max-h-48 object-contain w-full">

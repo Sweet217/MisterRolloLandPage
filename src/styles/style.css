@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner-1,
+.banner-2 {
+  @apply px-5 pt-5 md:pt-5 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
+}
+
+.banner-2 {
+  background-color: #fe5957;
+  /* Light Red from palette */
+}
+
+/* Layout for "Sobre Nosotros" Section */
+#sobre-nosotros {
+  @apply banner-1 flex flex-col md:flex-row items-center md:space-x-10;
+}
+
+#sobre-nosotros h2 {
+  @apply text-4xl font-bold mb-4;
+  color: #3a3a3a;
+}
+
+#sobre-nosotros p {
+  @apply text-lg leading-relaxed mt-2;
+  color: #3a3a3a;
+}
+
+#sobre-nosotros .text-section {
+  @apply md:w-1/2 text-left animate-fadeIn;
+}
+
+#sobre-nosotros .image-section {
+  @apply md:w-1/2 mt-8 md:mt-0 animate-fadeIn;
+}
+
+#sobre-nosotros img {
+  @apply rounded-lg shadow-lg w-full object-cover;
+}
+
+.bg-yellowis {
+  background-color: #fe5957;
+  /* Reused Light Red */
+}
+
+.hello-button {
+  @apply bg-[#fe5957];
+  /* Light Red */
+}
+
+.menu-button {
+  @apply text-xl font-semibold text-primary font-sans;
+  color: #3a3a3a;
+  /* Gray for text */
+}
+
+.submit-button {
+  @apply border-gray-800 border-4 3xl:text-xl 2xl:text-xl lg:text-xl md:text-xl text-xs py-2 px-4 lg:py-4 lg:px-8 rounded-2xl font-work_sans font-semibold;
+}
+
+.heading3 {
+  color: #3a3a3a;
+  @apply md:text-5xl text-xl font-bold font-work_sans tracking-wide;
+}
+
+.project-title {
+  @apply text-gray-700 text-3xl md:text-4xl font-work_sans tracking-wide font-bold;
+}
+
+.card {
+  @apply bg-white rounded-2xl p-6 text-left shadow-md;
+}
+
+.card-about {
+  @apply bg-white rounded-2xl shadow-md;
+}
+
+.card-image {
+  @apply md:w-1/2 flex items-center justify-center rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none overflow-hidden;
+}
+
+.space-y-5 {
+  @apply flex flex-col justify-center;
+}
+
+.fade-center-out {
+  mask-image: radial-gradient(circle, black 30%, rgba(0, 0, 0, 0.5) 20%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle, black 30%, rgba(0, 0, 0, 0.5) 70%, transparent 100%);
+}
+
+.banner-3,
+.banner-4 {
+  @apply px-5 pt-5 md:pt-10 3xl:px-36 2xl:px-36 xl:px-28 lg:px-24 md:px-16;
+}
+
+.banner-3 {
+  background-image: url('../assets/seal pixelart2-vmake.jpeg');
+  background-position: 50% 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.banner-4 {
+  position: relative;
+}
+
+.banner-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, #fe5957 100%),
+    url('../assets/441485314_18030422624056310_4391104605672901571_n.jpg');
+  background-position: 50% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 50%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .h-850 {
+    height: 900px;
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
+}
+
+@keyframes textFlowAnimation {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -200%;
+  }
+}
+
+.animate-text {
+  background-size: 200%;
+  background-position: -100%;
+  animation: textAnimation 3s linear forwards;
+}
